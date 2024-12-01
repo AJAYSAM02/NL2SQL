@@ -5,25 +5,8 @@ NL2SQL and METASQL Implementation of Group 12
 
 **NL2SQL360** is a testbed for fine-grained evaluation of NL2SQL solutions. Our testbed integrates existing NL2SQL benchmarks, a repository of NL2SQL models, and various evaluation metrics, which aims to provide an intuitive and user-friendly platform to enable both standard and customized performance evaluations. Users can utilize **NL2SQL360** to assess different NL2SQL methods against established benchmarks or tailor their evaluations based on specific criteria. This flexibility allows for testing solutions in specific data domains or analyzing performance on different characteristics of SQL queries. 
 
-In addition, we propose **SuperSQL**, which achieves competitive performance with execution accuracy of **87%** and **62.66%** on the Spider and BIRD test sets, respectively.
+**SuperSQL** is experimented which achieves competitive performance with execution accuracy of **87%** and **62.66%** on the Spider and BIRD test sets, respectively.
 
-## :tada:News
-
-[24/9/23] We release NL2SQL360 `1.1.0` version, which supports two new metrics **Reward-based VES** (RVES), **Soft-F1 Score** (F1), from [BIRD-Mini-Dev ](https://github.com/bird-bench/mini_dev) dataset. **Please update your package with** `pip install --upgrade nl2sql360`.
-
-[24/9/1] We have released our **[Homepage & Leaderboard](https://nl2sql360.github.io)!**
-
-[24/8/2] We have released CLI usage / Code usage tutorials. **Please [check out](#rocketquick-start)!**
-
-[24/7/30] We have refactored the code and released the official python package([nl2sql360 · PyPI](https://pypi.org/project/nl2sql360)). **Stay tuned for the complete documents!**
-
-[24/6/30] Our paper [The Dawn of Natural Language to SQL: Are We Fully Ready?](https://arxiv.org/abs/2406.01265) has been accepted by VLDB'24.
-
-## :balloon:Features
-
-- **Easy-to-use Evaluation**: Command Line Usage / Python Code Usage.
-- **Integrated Metrics**: Execution Accuracy / Exact-Match Accuracy / Valid Efficiency Score / Question Variance Testing.
-- **Multi-angle Performance**: Fine-grained performance (JOIN, Sub-query, etc.) / Scenario-based (Business Intelligence, etc.)
 
 ## :wrench:Installation
 
@@ -131,29 +114,9 @@ DATASET_DIR_PATH:
 
 </details>
 
-## :dart:Road Map
-
-:white_check_mark:Release **NL2SQL360** evaluation code.
-
-:white_check_mark:Release **NL2SQL360** experiments data.
-
-:white_check_mark:Release **NL2SQL360** Official Python Package.
 
 ## :floppy_disk:Experiment Data
 
 We have released all experiment data used in our paper.
 
 [Download Link](https://drive.google.com/drive/folders/1SDwY30H2r6XNYeS53wcZNocVFm0hVgpz?usp=sharing)
-
-## :pushpin:Citation
-
-```
-@misc{li2024dawn,
-      title={The Dawn of Natural Language to SQL: Are We Fully Ready?}, 
-      author={Boyan Li and Yuyu Luo and Chengliang Chai and Guoliang Li and Nan Tang},
-      year={2024},
-      eprint={2406.01265},
-      archivePrefix={arXiv},
-      primaryClass={id='cs.DB' full_name='Databases' is_active=True alt_name=None in_archive='cs' is_general=False description='Covers database management, datamining, and data processing. Roughly includes material in ACM Subject Classes E.2, E.5, H.0, H.2, and J.1.'}
-}
-```
